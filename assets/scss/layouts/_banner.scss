@@ -1,0 +1,48 @@
+.banner {
+  padding: 120px 0;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  @include media-breakpoint-down(md) {
+    text-align: center;
+  }
+  @include media-breakpoint-down(sm) {
+    padding: 60px 0;
+  }
+  &:before {
+    background-color: $info;
+    content: "";
+    width: 200%;
+    height: 380px;
+    position: absolute;
+    right: 0;
+    top: -230px;
+    z-index: -1;
+    transform: rotate(-60deg);
+    transform-origin: top right;
+    @include media-breakpoint-down(md) {
+      width: 200vh;
+      opacity: 0.5;
+    }
+  }
+  &__title {
+    @extend %type-h1;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  &__text {
+    max-width: 610px;
+    margin-bottom: 40px;
+    line-height: 34px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  &__info {
+    margin-top: 40px;
+    font-size: 2.083rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

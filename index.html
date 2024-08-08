@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban - Home</title>
+    <link rel="icon" href="./assets/images/favicon.ico" sizes="any" />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header" aria-label="Main Navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container justify-content-between align-items-center position-relative">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/Logo.png" alt="Main Logo" />
+                </a>
+                <!-- For Offset Menu Slide In Mobile Device -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"
+                    aria-controls="offcanvas" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvas"
+                    aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasLabel">
+                            <img src="./assets/images/Logo.png" alt="Main Logo" />
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Event</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Artist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__right">
+                    <a href="#">
+                        <img src="./assets/images/icons/search-icon.png" alt="Shopping Cart Icon" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="banner bg-secondary" role="region" aria-label="Banner Section">
+        <div class="container">
+            <div class="row">
+                <div class="order-1 order-md-0 col-md-8">
+                    <h1 class="banner__title text-primary">Live Music</h1>
+                    <p class="banner__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                        lacinia odio vitae vestibulum vestibulum.
+                    </p>
+                    <a href="#" type="submit" class="btn btn-primary text-light" aria-label="Register Now">
+                        Register Now
+                    </a>
+                    <p class="banner__info">LIVE STREAMING FROM LONDON!</p>
+                </div>
+                <div class="order-0 order-md-1 col-md-4">
+                    <img src="./assets/images/user-1.png" class="img-fluid rounded-circle bg-primary mb-5 mb-md-0"
+                        alt="Home Banner" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="concert__wrap">
+        <section class="concert bg-primary concert__a" role="region" aria-label="Concert A Section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-xl-6">
+                        <img src="./assets/images/user-2.png" class="img-fluid rounded-circle bg-secondary mb-5 mb-md-0"
+                            alt="Concert A Image" />
+                    </div>
+                    <div class="col-md-8 col-xl-6">
+                        <h2 class="concert__title text-light">Concert A</h2>
+                        <p class="concert__text text-light">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                            ipsum suspendisse ultrices gravida. Risus commodo viverra
+                            maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="concert bg-secondary concert__b" role="region" aria-label="Concert B Section">
+            <div class="container">
+                <div class="row align-items-xl-end">
+                    <div class="order-1 order-md-0 col-md-8 col-xl-6">
+                        <h2 class="concert__title text-dark">Concert B</h2>
+                        <p class="concert__text text-dark">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                            ipsum suspendisse ultrices gravida. Risus commodo viverra
+                            maecenas accumsan lacus vel facilisis.
+                        </p>
+                    </div>
+                    <div class="order-0 order-md-1 col-md-4 col-xl-6">
+                        <img src="./assets/images/user-1-1.png" class="img-fluid rounded-circle bg-primary mb-5 mb-md-0"
+                            alt="Concert B Image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="concert bg-info concert__c" role="region" aria-label="Concert C Section">
+        <div class="container">
+            <div class="row align-items-xl-end">
+                <div class="col-md-4 col-xl-6">
+                    <img src="./assets/images/user-3.png" class="img-fluid rounded-circle bg-primary mb-5 mb-md-0"
+                        alt="Concert C Image" />
+                </div>
+                <div class="col-md-8 col-xl-6">
+                    <h2 class="concert__title text-primary">Concert C</h2>
+                    <p class="concert__text text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                        ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+                        accumsan lacus vel facilisis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

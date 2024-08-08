@@ -1,0 +1,35 @@
+.header {
+  .navbar {
+    padding: 26px 0;
+    &-brand {
+      margin: 0;
+      padding: 0;
+    }
+    &-nav {
+      column-gap: 60px;
+      row-gap: 20px;
+      .nav-link {
+        padding: 0;
+        font-weight: 500;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &__right {
+    @include media-breakpoint-down(lg) {
+      margin-right: 90px;
+    }
+  }
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  border: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
